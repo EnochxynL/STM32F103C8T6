@@ -89,21 +89,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t num1 = 50;     //定义两个变量
-  float num2 = 12.13;
-  
-  LCD_Init();             //LCD初始化
-  LCD_Fill(0,0,128,160,GREEN);    //绿色全屏
-  LCD_ShowString(0,0,"GMU-DK",RED,GREEN,16,0);    //显示字符串GMU-DK
-  LCD_DrawLine(0,16,128,16,BLUE);       //划线
-  LCD_DrawLine(0,24,128,24,BLACK);
-  LCD_DrawRectangle(16,40,100,80,YELLOW); //画矩形
-  Draw_Circle(64,80,16,MAGENTA);      //画圆
-  LCD_ShowIntNum(8,96,num1,2,RED,GREEN,12);      //显示整数变量
-  LCD_ShowFloatNum1(8,108,num2,4,RED,GREEN,12);  //显示两位小数变量
-  
-  LCD_ShowChinese(8,120,0,RED,GREEN,16);     //显示16*16的汉字
-  LCD_ShowChinese(24,120,1,RED,GREEN,24);    //显示24*24的汉字
+	
+	LCD_Init();//LCDLCD初始化
+	LCD_Fill(0,0,LCD_W,LCD_H,WHITE);	
+//	LCD_ShowPicture(20,45,120,29,gImage_pic1);
+	LCD_ShowString(50,0,"NOLOGE!!!",BLACK,WHITE,16,0);
+	LCD_ShowChinese(50,20,"无名科技",BLACK,WHITE,16,0);	
 
   /* USER CODE END 2 */
 
@@ -133,7 +124,9 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -143,12 +136,12 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
