@@ -5,9 +5,6 @@
 extern "C" {
 #endif
 
-#include "lcd_init.h"
-#include "lcd.h"
-
 void setup();
 void loop();
 	

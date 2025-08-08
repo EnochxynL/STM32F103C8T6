@@ -1,5 +1,9 @@
 #include "run.h"
-#include "run.hpp"
+
+extern "C" {
+#include "lcd_init.h"
+#include "lcd.h"
+}
 
 void setup() {
   // put your setup code here, to run once:
@@ -14,5 +18,6 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+//  rt_thread_mdelay(1000);
+//  rt_kprintf("\nHello RT-Thread \n");
 }
