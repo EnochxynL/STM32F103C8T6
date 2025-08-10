@@ -13,7 +13,18 @@
                 "Drivers/STM32F1xx_HAL_Driver/Inc/Legacy",
                 "Drivers/CMSIS/Device/ST/STM32F1xx/Include",
                 "Drivers/CMSIS/Include",
-                "User_Bsp/LCD"
+                "User_Bsp/LCD",
+                "User_Ctrl/inc",
+                "Middlewares/Third_Party/FreeRTOS/Source/include",
+                "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+                "Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3",
+                "RT-Thread",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/components/finsh/inc/",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/include/",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/msvc/",
+                "Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/octal/"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

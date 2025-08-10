@@ -1,6 +1,6 @@
 #include "main.h"
 #include <rtthread.h>
 
-uint32_t HAL_GetTick(void) {
-  return rt_tick_get();
+void HAL_Delay(uint32_t Delay) {
+  rt_thread_mdelay(Delay);
 }
