@@ -18,7 +18,7 @@ void setup() {
 //	LCD_VT100_Printf("\033[31mRed Text\033[0m\n");        // 红色文字
 //	LCD_VT100_Printf("\033[32mGreen Text\033[0m\n");      // 绿色文字
 //	LCD_VT100_Printf("\033[34mBlue Text\033[0m\n");       // 蓝色文字
-	LCD_VT100_Demo();
+	LCD_VT100_ScrollTest();
 }
 
 void loop() {
