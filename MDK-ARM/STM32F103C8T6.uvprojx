@@ -627,9 +627,9 @@
           <GroupName>User_Ctrl</GroupName>
           <Files>
             <File>
-              <FileName>run.cpp</FileName>
+              <FileName>start.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User_Ctrl\src\run.cpp</FilePath>
+              <FilePath>..\User_Ctrl\src\start.cpp</FilePath>
             </File>
             <File>
               <FileName>run.c</FileName>

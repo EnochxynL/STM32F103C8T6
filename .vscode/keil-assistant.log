@@ -8,3 +8,23 @@
 [info] Log at : 2025/8/10|12:28:34|GMT+0800
 
 [Warn] 发现无效的文件组，Group: ::CMSIS
+[info] Log at : 2025/9/15|10:39:37|GMT+0800
+
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
+[info] project closed: STM32F103C8T6
+[info] Log at : 2025/9/15|22:17:57|GMT+0800
+
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
