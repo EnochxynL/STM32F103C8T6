@@ -636,6 +636,21 @@
               <FileType>1</FileType>
               <FilePath>..\User_Ctrl\src\run.c</FilePath>
             </File>
+            <File>
+              <FileName>lcd_vt100.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User_Bsp\LCD\lcd_vt100.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_vt100_demo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User_Bsp\LCD\lcd_vt100_demo.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_vt100_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User_Bsp\LCD\lcd_vt100_init.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

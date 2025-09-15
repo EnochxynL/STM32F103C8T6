@@ -18,6 +18,15 @@
         }
     ],
     "files.associations": {
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "lcd_vt100.h": "c",
+        "stdlib.h": "c",
+        "random": "c",
+        "string.h": "c",
+        "lcd.h": "c",
+        "lcd_init.h": "c",
+        "lcd_vt100_init.h": "c",
+        "stdint.h": "c",
+        "main.h": "c"
     }
 }

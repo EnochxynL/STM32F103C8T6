@@ -3,6 +3,8 @@
 extern "C" {
 #include "lcd_init.h"
 #include "lcd.h"
+#include "lcd_vt100_demo.h"
+#include "lcd_vt100.h"
 }
 
 void setup() {
@@ -12,6 +14,11 @@ void setup() {
 //	LCD_ShowPicture(20,45,120,29,gImage_pic1);
 	LCD_ShowString(50,0,(std::uint8_t*)("CIRNO!!!"),BLACK,WHITE,16,0);
 	LCD_ShowChinese(50,20,(std::uint8_t*)("无名科技"),BLACK,WHITE,16,0);	
+//	LCD_VT100_Init(LCD_W, LCD_H, 8, 16);
+//	LCD_VT100_Printf("\033[31mRed Text\033[0m\n");        // 红色文字
+//	LCD_VT100_Printf("\033[32mGreen Text\033[0m\n");      // 绿色文字
+//	LCD_VT100_Printf("\033[34mBlue Text\033[0m\n");       // 蓝色文字
+	LCD_VT100_Demo();
 }
 
 void loop() {
