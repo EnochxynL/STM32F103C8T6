@@ -1,8 +1,17 @@
+# Visual Studio Code
+.vscode/*
+compile_commands.json
+
+# STM32CubeMX
 .mxproject
+Drivers/*
+Middlewares/*
+
+# MDK-ARM
 MDK-ARM/*
 !MDK-ARM/*.uvprojx
 !MDK-ARM/*.s
+
+# PlatformIO
 .pio/*
 
-Drivers/*
-Middlewares/*
