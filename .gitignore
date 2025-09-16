@@ -6,4 +6,4 @@ MDK-ARM/*
 
 Drivers/*
 Middlewares/*
-
+!Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/sys/types.h

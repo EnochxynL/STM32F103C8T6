@@ -17,6 +17,10 @@
                 "D:/Github/STM32F103C8T6/Drivers/CMSIS/Include",
                 "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/components/finsh/inc",
                 "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include",
+                "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/include",
+                "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension",
+                "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/msvc",
+                "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/octal",
                 "D:/Github/STM32F103C8T6/User_Ctrl/inc",
                 "D:/Github/STM32F103C8T6/User_Bsp/LCD",
                 ""
@@ -33,6 +37,10 @@
                     "D:/Github/STM32F103C8T6/Drivers/CMSIS/Include",
                     "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/components/finsh/inc",
                     "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include",
+                    "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/include",
+                    "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension",
+                    "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/msvc",
+                    "D:/Github/STM32F103C8T6/Middlewares/Third_Party/RealThread_RTOS_RT-Thread/include/libc/extension/fcntl/octal",
                     "D:/Github/STM32F103C8T6/User_Ctrl/inc",
                     "D:/Github/STM32F103C8T6/User_Bsp/LCD",
                     ""
@@ -45,6 +53,7 @@
                 "STM32F1",
                 "STM32F103xB",
                 "USE_HAL_DRIVER",
+                "_POSIX_C_SOURCE=1",
                 ""
             ],
             "compilerPath": "C:/Users/enoch/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",

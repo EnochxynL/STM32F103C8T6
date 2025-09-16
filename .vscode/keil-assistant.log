@@ -28,3 +28,9 @@
 [Warn] 发现无效的文件组，Group: ::CMSIS
 [Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
 // !!! "... is not valid JSON
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
+[Warn] 发现无效的文件组，Group: ::CMSIS
+[Error] c_cpp_properties.json parse error: SyntaxError: Unexpected token '/', "//
+// !!! "... is not valid JSON
