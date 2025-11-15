@@ -1,2 +1,0 @@
-[stm32c8t6-出厂测试.zip | 无名科技Nologo](https://ziliao.nologo.tech/%E6%97%A0%E5%90%8D%E7%A7%91%E6%8A%80Nologo%E8%B5%84%E6%96%99/STM32%E5%BC%80%E5%8F%91%E6%9D%BF/STM32+CH32%E5%BC%80%E5%8F%91%E6%9D%BF%E8%B5%84%E6%96%99V2.0-20240508/stm32c8t6-%E5%87%BA%E5%8E%82%E6%B5%8B%E8%AF%95.zip)
-[STM32+HAL库模拟SPI驱动ST7735s屏幕 - STM32/STM8单片机论坛 - ST MCU意法半导体官方技术支持论坛](https://bbs.21ic.com/icview-3351202-1-1.html)

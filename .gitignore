@@ -1,18 +1,15 @@
-# Visual Studio Code
-.vscode/*
-compile_commands.json
-.clangd
+# dot files
+/.vscode/launch.json
+/.settings
+/.eide/log
+/.eide.usr.ctx.json
 
-# STM32CubeMX
-.mxproject
-Drivers/*
-Middlewares/*
+# project out
+/build
+/bin
+/obj
+/out
 
-# MDK-ARM
-MDK-ARM/*
-!MDK-ARM/*.uvprojx
-!MDK-ARM/*.s
-
-# PlatformIO
-.pio/*
-
+# eide template
+*.ept
+*.eide-template

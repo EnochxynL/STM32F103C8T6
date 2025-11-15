@@ -1,0 +1,89 @@
+version: "4.1"
+name: STM32F103C8T6
+type: ARM
+deviceName: null
+packDir: null
+srcDirs:
+  - Core
+  - Drivers
+  - Middlewares
+  - User_Ctrl
+  - User_Bsp
+virtualFolder:
+  name: <virtual_root>
+  files:
+    - path: startup_stm32f103xb.s
+  folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: ff81a28c70095062bf5ef3fdb6592b13
+targets:
+  Debug:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_HAL_DRIVER
+        - STM32F103xB
+      incList:
+        - Core/Inc
+        - Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
+        - Drivers/STM32F1xx_HAL_Driver/Inc
+        - Middlewares/Third_Party/FreeRTOS/Source/include
+        - Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+        - Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3
+        - Drivers/CMSIS/Device/ST/STM32F1xx/Include
+        - Drivers/CMSIS/Include
+        - User_Ctrl/inc
+        - User_Bsp
+      libList: []
+    excludeList: []
+    toolchain: GCC
+    toolchainConfigMap:
+      GCC:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 5
+          afterBuildTasks: []
+          asm-compiler:
+            ASM_FLAGS: ""
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: ""
+            C_FLAGS: ""
+            language-c: c11
+            language-cpp: c++11
+            one-elf-section-per-data: true
+            one-elf-section-per-function: true
+            optimization: level-debug
+            warnings: all-warnings
+          global:
+            $float-abi-type: hard
+            misc-control: ""
+            not-use-syscalls: true
+            output-debug-info: enable
+            use-newlib-nano: true
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            LD_FLAGS: ""
+            LIB_FLAGS: -lm
+            output-format: elf
+            remove-unused-input-sections: true
+        scatterFilePath: STM32F103C8Tx_FLASH.ld
+        storageLayout:
+          RAM: []
+          ROM: []
+        useCustomScatterFile: true
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+    uploader: JLink
